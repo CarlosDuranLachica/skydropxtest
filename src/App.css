@@ -1,0 +1,116 @@
+@import "~antd/dist/antd.css";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.App {
+  text-align: center;
+}
+
+.App::before {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: fixed;
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./Icons/decoration.png");
+  background-size: 60px;
+  opacity: 0.06;
+}
+
+.skydropx-Logo {
+  width: 50%;
+  max-width: 250px;
+  min-width: 100px;
+  margin: 5vh auto;
+}
+
+.Header {
+  margin-bottom: 7vh;
+  background: linear-gradient(
+    60deg,
+    #eac7c8,
+    #ccdecb,
+    #87b0e2,
+    #eac7c8,
+    #8893e2
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container-card {
+  width: 50%;
+  min-width: 320px;
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.shadow {
+  border-color: transparent;
+  box-shadow: 0 1px 2px -2px rgb(0 0 0 / 16%), 0 3px 6px 0 rgb(0 0 0 / 12%),
+    0 5px 12px 4px rgb(0 0 0 / 9%);
+}
+
+/* ant styles  */
+.ant-form-item-label {
+  font-weight: 500;
+}
+
+.ant-input {
+  border-radius: 15px;
+}
+
+.ant-input-number,
+.ant-input-number-input {
+  border-radius: 15px 0 0 15px;
+}
+
+.ant-btn {
+  outline: 0;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  height: auto;
+  padding: 5px 16px;
+}
+
+.ant-btn.success {
+  background: rgb(56, 184, 101);
+  border-color: rgb(56, 184, 101);
+}
+
+.ant-btn.success :hover {
+  background: rgba(56, 184, 101, 0.5);
+  border-color: rgba(56, 184, 101, 0.5);
+}

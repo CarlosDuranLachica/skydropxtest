@@ -1,0 +1,68 @@
+.container {
+  width: 50%;
+  min-width: 320px;
+  max-width: 700px;
+  background-color: #fff;
+  margin: 0 auto 4vh;
+  border-radius: 16px;
+  padding: 25px 16px;
+}
+
+.rate {
+  padding: 16px 20px;
+  text-align: left;
+  display: grid;
+  grid-column-gap: 16px;
+  grid-template-columns: 40% 60%;
+  grid-template-areas:
+    "name type"
+    "name time"
+    "name price"
+    "null button";
+}
+
+.name {
+  margin: 0 auto;
+  grid-area: name;
+}
+
+.name img {
+  width: 150px;
+  max-width: 100%;
+}
+
+.type {
+  grid-area: type;
+}
+
+.time {
+  grid-area: time;
+}
+
+.price {
+  grid-area: price;
+}
+
+.type span,
+.time span,
+.price span,
+.addresses span {
+  margin-left: 10px;
+}
+
+.button {
+  width: 50%;
+  min-width: fit-content;
+  max-width: 250px;
+  margin: 0 auto;
+  grid-area: button;
+}
+
+.addresses {
+  text-align: start;
+  padding: 2rem 3rem;
+}
+
+.addresses h1 {
+  border-bottom: solid 2px rgba(0, 0, 0, 0.85);
+}
